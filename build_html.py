@@ -3,7 +3,7 @@ import sqlite3
 from pathlib import Path
 
 DB_PATH = Path(__file__).parent / "pebble_shipping.db"
-OUT_PATH = Path(__file__).parent / "shipping.html"
+OUT_PATH = Path(__file__).parent / "index.html"
 
 conn = sqlite3.connect(DB_PATH)
 conn.row_factory = sqlite3.Row
